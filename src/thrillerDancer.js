@@ -9,7 +9,7 @@ thrillerDancer.prototype.constructor = popDancer;
 thrillerDancer.prototype.step = function (){
   Dancer.prototype.step.bind(this)();
   //change toggle
-  this.$node.toggle();
+  // this.$node.toggle();
 }
 
 thrillerDancer.prototype.setPosition = function(top, left) {

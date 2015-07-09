@@ -27,7 +27,7 @@ BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function() {
   Dancer.prototype.step.bind(this)();
-  this.$node.toggle('flipH');
+
 };
 
 BlinkyDancer.prototype.setPosition = function(top, left) {

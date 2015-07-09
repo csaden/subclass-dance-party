@@ -12,6 +12,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   // this one sets the position to some random default point within the body
   // this.setPosition(this.top, this.left);
   this.step();
+  this.setPosition();
   // return dancer;
 };
 
@@ -32,3 +33,7 @@ Dancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+// var makeDancer = function (top, left, timeBetweenSteps) {
+//   return new Dancer(top, left, timeBetweenSteps);
+// }

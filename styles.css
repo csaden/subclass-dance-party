@@ -25,3 +25,33 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.blinkyDancer {
+  position: absolute;
+  content: url("images/manDancing.svg");
+  width:100px;
+  height:100px;
+}
+
+.popDancer {
+ position: absolute;
+  content: url("images/mjDance.svg");
+  width:100px;
+  height:100px;
+}
+
+.thrillerDancer {
+  position: absolute;
+  content: url("images/movingDance.svg");
+  width:100px;
+  height:100px;
+}
+
+.flipH{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}

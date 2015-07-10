@@ -1,21 +1,17 @@
-var popDancer = function (top, left, timeBetweenSteps){
+var PopDancer = function(top, left, timeBetweenSteps) {
   Dancer.apply(this, arguments);
+  this.timeBetweenSteps = 2000;
   this.$node.removeClass('dancer');
   this.$node.addClass('popDancer moonWalk');
 };
 
-popDancer.prototype = Object.create(Dancer.prototype);
-popDancer.prototype.constructor = popDancer;
+PopDancer.prototype = Object.create(Dancer.prototype);
+PopDancer.prototype.constructor = PopDancer;
 
-popDancer.prototype.step = function () {
-  Dancer.prototype.step.bind(this)();
+PopDancer.prototype.step = function() {
+  Dancer.prototype.step.call(this);
 };
 
-popDancer.prototype.setPosition = function(top, left) {
-  Dancer.prototype.setPosition.apply(this,[this.top, this.left]);  
-  
-};
-
-var makePopDancer = function (top, left, timeBetweenSteps) {
-  return new popDancer(top, left, 2000);
+PopDancer.prototype.setPosition = function(top, left) {
+  Dancer.prototype.setPosition.call(this, top, left);
 };

@@ -11,6 +11,6 @@ ThrillerDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
 };
 
-ThrillerDancer.prototype.setPosition = function(top, left) {
-  Dancer.prototype.setPosition.apply(this, arguments);
+ThrillerDancer.prototype.setPosition = function() {
+  Dancer.prototype.setPosition.call(this);
 };

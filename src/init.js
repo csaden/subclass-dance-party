@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   $("#lineDancerButton").on("click",function(event){
     var left = $("body").width() * 0.75;
-    var top = 50;
+    var top = 20;
 
     for( var i = 0 ; i < popDancers.length ; i++){
       popDancers[i].$node[0].style.top = top +'px';
@@ -13,7 +13,7 @@ $(document).ready(function(){
       top += 125;
     }
 
-    top = 50;
+    top = 20;
     left = $("body").width() * 0.2;
 
     for( i = 0 ; i < thrillerDancers.length ; i++){
@@ -60,11 +60,11 @@ $(document).ready(function(){
       return Math.random() * ($("body").height() - 300) + 50;
     };
 
-    var x = getX(350);
-    var y = getY();
+    var left = getX(350);
+    var top = getY();
     var timeBetweenSteps = Math.random() * 1000;
 
-    var dancer = new dancerMakerFunction(y, x, timeBetweenSteps);
+    var dancer = new dancerMakerFunction(top, left, timeBetweenSteps);
 
     $('body').append(dancer.$node);
 

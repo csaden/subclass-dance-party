@@ -12,6 +12,6 @@ PopDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 };
 
-PopDancer.prototype.setPosition = function(top, left) {
-  Dancer.prototype.setPosition.call(this, top, left);
+PopDancer.prototype.setPosition = function() {
+  Dancer.prototype.setPosition.call(this);
 };

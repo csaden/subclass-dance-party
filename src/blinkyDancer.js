@@ -11,6 +11,6 @@ BlinkyDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 };
 
-BlinkyDancer.prototype.setPosition = function(top, left) {
-  Dancer.prototype.setPosition.call(this, top, left);
+BlinkyDancer.prototype.setPosition = function() {
+  Dancer.prototype.setPosition.call(this);
 };
